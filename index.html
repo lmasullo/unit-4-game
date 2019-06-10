@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Normalize css instead of reset -->
-    <link rel="stylesheet" href="assets/css/normalize.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Normalize css instead of reset -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
 
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Document</title>
-  </head>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <body>
-    <div id="heading">
-      <h1>Crystals Collector!</h1>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>Crystals Collector!</h1>
+  </div>
+
+  <div id="instructions">
+    <p>
+      You will be given a random number at the start of the game.
+    </p>
+    <p>
+      There are four crystals below. By clicking on a crystal you will add a
+      specific amount of points to your total score.
+    </p>
+    <p>
+      You win the game by matching your total score to the random number, you
+      lose the game if your total score goes above the random number.
+    </p>
+    <p>
+      The value of each crystal is hidden from you until you click on it.
+    </p>
+    <p>
+      Each time when the game starts, the game will change the values of each
+      crystal.
+    </p>
+  </div>
+
+  <div class="clearfix"></div>
+  <div id="randwin">
+    <div id="random">
+      Randon Number
     </div>
 
-    <div id="instructions">
-      <p>
-        You will be given a random number at the start of the game.
-      </p>
-      <p>
-        There are four crystals below. By clicking on a crystal you will add a
-        specific amount of points to your total score.
-      </p>
-      <p>
-        You win the game by matching your total score to the random number, you
-        lose the game if your total score goes above the random number.
-      </p>
-      <p>
-        The value of each crystal is hidden from you until you click on it.
-      </p>
-      <p>
-        Each time when the game starts, the game will change the values of each
-        crystal.
-      </p>
+    <div id="win_lose">
+      <div id="message"></div>
+      <div id="divWin">Wins: <span id="wins"></span></div>
+      <div>Losses: <span id="losses"></span></div>
     </div>
+  </div>
 
-    <div class="clearfix"></div>
-    <div id="randwin">
-      <div id="random">
-        Randon Number
-      </div>
+  <div class="clearfix"></div>
 
-      <div id="win_lose">
-        <div id="message"></div>
-        <div>Wins: <span id="wins"></span></div>
-        <div>Losses: <span id="losses"></span></div>
-      </div>
-    </div>
+  <div id="images">
+    <img id="blue" src="assets/images/crystals-blue.png" alt="" />
+    <img id="green" src="assets/images/crystals-green.png" alt="" />
+    <img id="yellow" src="assets/images/crystals-yellow.png" alt="" />
+    <img id="red" src="assets/images/crystals-red.png" alt="" />
+  </div>
 
-    <div class="clearfix"></div>
+  <div id="score">Your total score is: <span id="scoreVal"></span></div>
 
-    <div id="images">
-      <img id="blue" src="assets/images/crystals-blue.png" alt="" />
-      <img id="green" src="assets/images/crystals-green.png" alt="" />
-      <img id="yellow" src="assets/images/crystals-yellow.png" alt="" />
-      <img id="red" src="assets/images/crystals-red.png" alt="" />
-    </div>
+  <script src="assets/js/game.js"></script>
+</body>
 
-    <div id="score">Your total score is: <span>test</span></div>
-
-    <script src="assets/js/game.js"></script>
-  </body>
 </html>
