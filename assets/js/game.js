@@ -57,8 +57,6 @@ $(document).ready(() => {
     // Convert to a number
     const scoreInt = Number($('#scoreVal').text());
 
-    console.log(scoreInt);
-
     // Compare the score with the random number
     if (scoreInt === randRet.randNum) {
       console.log('Win!!!!!!');
