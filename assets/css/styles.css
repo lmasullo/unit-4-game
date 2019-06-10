@@ -1,0 +1,67 @@
+body {
+  background-image: url("../../assets/images/wood.png");
+}
+
+h1 {
+  display: inline-block;
+  background-color: white;
+  height: 75px;
+  margin-left: 10px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#instructions {
+  display: inline-block;
+  background-color: tan;
+  margin: 10px;
+  padding: 10px;
+}
+
+#randwin {
+  width: 600px;
+  /* add this to contain floated children */
+  overflow: hidden;
+
+}
+
+#random {
+
+  float: left;
+  height: 200px;
+  width: 250px;
+  background-color: lightgreen;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#win_lose {
+  float: left;
+  height: 200px;
+  width: 150px;
+  background-color: cyan;
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#images {
+  padding: 10px;
+}
+
+#score {
+  display: inline-block;
+  background-color: green;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.clearfix::after {
+  Content: ””;
+  Display: block;
+  Clear: both;
+}
